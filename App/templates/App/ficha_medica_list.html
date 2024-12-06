@@ -1,0 +1,39 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">Pacientes atendidos</h2>
+  <a href="{% url 'medic_menu' %}" class="btn btn-primary mb-3">Volver</a>
+  <div class="table-responsive">
+    <table class="table table-striped align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">RUT</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Fecha Atención</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for producto in productos_list %}
+        <tr>
+          <td>{{ ficha_medica.rut_paciente }}</td>
+          <td>{{ ficha_medica.apellido_paciente }}</td>
+          <td>{{ ficha_medica.nombre_apellido }}</td>
+          <td>{{ ficha_medica.fecha_atencion }}</td>
+          <td>
+            <a href="{% url 'ficha_medica_detail' producto.pk %}" class="btn btn-info btn-sm me-2">Detalles</a>
+            <a href="{% url 'ficha_medica_edit' producto.pk %}" class="btn btn-warning btn-sm me-2">Editar</a>
+            <form action="{% url 'ficha_medica_delete' producto.pk %}" method="post" class="d-inline">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

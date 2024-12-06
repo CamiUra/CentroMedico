@@ -1,0 +1,24 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+<div class="container mt-5 text-center">
+    <h1 class="mb-4">Bienvenido/a {{ medic.nombre_medico }}</h1>
+    <h3 class="mb-4">¿Qué desea hacer hoy?</h3>
+    <div class="container mt-5">
+        <div class="list-group">
+            <a href="{% url 'ficha_medica_new' %}" class="list-group-item list-group-item-action">
+                <i class="bi bi-file-earmark-plus"></i> Crear ficha médica
+            </a>
+            <br><br>
+            <a href="{% url 'fichas_medicas_list' %}" class="list-group-item list-group-item-action">
+                <i class="bi bi-people"></i> Ver pacientes atendidos
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <a href="{% url 'login_view' %}" class="btn btn-primary mb-3">Cerrar sesión</a>
+
+    </div>
+</div>
+
+{% endblock %}

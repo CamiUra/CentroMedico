@@ -1,0 +1,482 @@
+[
+    {
+        "model": "App.Examenes",
+        "pk": 1,
+        "fields": {
+            "nombre_examen": "Hemograma Completo",
+            "precio_examen": 1200
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 2,
+        "fields": {
+            "nombre_examen": "Prueba de Glucosa en Ayunas",
+            "precio_examen": 800
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 3,
+        "fields": {
+            "nombre_examen": "Colesterol Total",
+            "precio_examen": 1000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 4,
+        "fields": {
+            "nombre_examen": "Prueba de Embarazo",
+            "precio_examen": 500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 5,
+        "fields": {
+            "nombre_examen": "Examen de Función Hepática",
+            "precio_examen": 1500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 6,
+        "fields": {
+            "nombre_examen": "Creatinina Sérica",
+            "precio_examen": 900
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 7,
+        "fields": {
+            "nombre_examen": "Prueba de VIH",
+            "precio_examen": 1300
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 8,
+        "fields": {
+            "nombre_examen": "Electrocardiograma",
+            "precio_examen": 2000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 9,
+        "fields": {
+            "nombre_examen": "Prueba de Función Renal",
+            "precio_examen": 1000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 10,
+        "fields": {
+            "nombre_examen": "Prueba de Hepatitis B",
+            "precio_examen": 1200
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 11,
+        "fields": {
+            "nombre_examen": "Hepatitis C",
+            "precio_examen": 1300
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 12,
+        "fields": {
+            "nombre_examen": "Prueba de Función Pulmonar",
+            "precio_examen": 1500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 13,
+        "fields": {
+            "nombre_examen": "Radiografía de Tórax",
+            "precio_examen": 1800
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 14,
+        "fields": {
+            "nombre_examen": "Prueba de Papanicolaou",
+            "precio_examen": 900
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 15,
+        "fields": {
+            "nombre_examen": "Mastografía",
+            "precio_examen": 2200
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 16,
+        "fields": {
+            "nombre_examen": "Ultrasonido Abdominal",
+            "precio_examen": 2500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 17,
+        "fields": {
+            "nombre_examen": "Tomografía Computarizada",
+            "precio_examen": 3000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 18,
+        "fields": {
+            "nombre_examen": "Resonancia Magnética",
+            "precio_examen": 4500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 19,
+        "fields": {
+            "nombre_examen": "Examen de Orina Completo",
+            "precio_examen": 800
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 20,
+        "fields": {
+            "nombre_examen": "Prueba de VIH y Hepatitis C",
+            "precio_examen": 2500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 21,
+        "fields": {
+            "nombre_examen": "Análisis de Sangre para TSH",
+            "precio_examen": 1000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 22,
+        "fields": {
+            "nombre_examen": "Antígeno Prostático Específico (PSA)",
+            "precio_examen": 1300
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 23,
+        "fields": {
+            "nombre_examen": "Examen de Sangre para Anemia",
+            "precio_examen": 700
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 24,
+        "fields": {
+            "nombre_examen": "Prueba de Tuberculosis (Mantoux)",
+            "precio_examen": 1500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 25,
+        "fields": {
+            "nombre_examen": "Examen de Sangre para Vitamina D",
+            "precio_examen": 1200
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 26,
+        "fields": {
+            "nombre_examen": "Examen de Hemoglobina A1c",
+            "precio_examen": 1100
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 27,
+        "fields": {
+            "nombre_examen": "Biometría Hemática",
+            "precio_examen": 900
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 28,
+        "fields": {
+            "nombre_examen": "Prueba de Anticuerpos Anti-Toxoplasma",
+            "precio_examen": 1000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 29,
+        "fields": {
+            "nombre_examen": "Prueba de Glicemia Postprandial",
+            "precio_examen": 700
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 30,
+        "fields": {
+            "nombre_examen": "Prueba de Función Tireoidal",
+            "precio_examen": 1300
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 31,
+        "fields": {
+            "nombre_examen": "Ecografía Transvaginal",
+            "precio_examen": 2000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 32,
+        "fields": {
+            "nombre_examen": "Electroencefalograma",
+            "precio_examen": 2500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 33,
+        "fields": {
+            "nombre_examen": "Prueba de Anticuerpos Anti-HIV",
+            "precio_examen": 900
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 34,
+        "fields": {
+            "nombre_examen": "Electromiografía",
+            "precio_examen": 3000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 35,
+        "fields": {
+            "nombre_examen": "Prueba de Estrés",
+            "precio_examen": 2200
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 36,
+        "fields": {
+            "nombre_examen": "Gammagrafía Ósea",
+            "precio_examen": 5000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 37,
+        "fields": {
+            "nombre_examen": "Prueba de Anticuerpos Anti-Coronavirus",
+            "precio_examen": 1500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 38,
+        "fields": {
+            "nombre_examen": "Ecografía Renal",
+            "precio_examen": 1700
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 39,
+        "fields": {
+            "nombre_examen": "Examen de Sangre para Toxinas Botulínicas",
+            "precio_examen": 1200
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 40,
+        "fields": {
+            "nombre_examen": "Prueba de Embarazo en Sangre",
+            "precio_examen": 800
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 41,
+        "fields": {
+            "nombre_examen": "Biopsia de Piel",
+            "precio_examen": 3000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 42,
+        "fields": {
+            "nombre_examen": "Endoscopia Digestiva",
+            "precio_examen": 3500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 43,
+        "fields": {
+            "nombre_examen": "Electrocardiograma Holter",
+            "precio_examen": 2800
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 44,
+        "fields": {
+            "nombre_examen": "Examen de Sangre para Ácido Úrico",
+            "precio_examen": 1000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 45,
+        "fields": {
+            "nombre_examen": "Prueba de Pérdida Auditiva",
+            "precio_examen": 1200
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 46,
+        "fields": {
+            "nombre_examen": "Cistoscopia",
+            "precio_examen": 5000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 47,
+        "fields": {
+            "nombre_examen": "Prueba de Pérdida de Memoria",
+            "precio_examen": 1500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 48,
+        "fields": {
+            "nombre_examen": "Ecografía Obstétrica",
+            "precio_examen": 3000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 49,
+        "fields": {
+            "nombre_examen": "Punción Lumbar",
+            "precio_examen": 4000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 50,
+        "fields": {
+            "nombre_examen": "Examen de Tuberculosis",
+            "precio_examen": 1800
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 51,
+        "fields": {
+            "nombre_examen": "Prueba de Función Adrenal",
+            "precio_examen": 1600
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 52,
+        "fields": {
+            "nombre_examen": "Prueba de Densidad Ósea",
+            "precio_examen": 2500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 53,
+        "fields": {
+            "nombre_examen": "Prueba de Ácido Fólico",
+            "precio_examen": 1000
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 54,
+        "fields": {
+            "nombre_examen": "Frotis de Sangre Periférica",
+            "precio_examen": 800
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 55,
+        "fields": {
+            "nombre_examen": "Prueba de Función Hídrica",
+            "precio_examen": 1400
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 56,
+        "fields": {
+            "nombre_examen": "Prueba de Anticuerpos Anti-Malaria",
+            "precio_examen": 1200
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 57,
+        "fields": {
+            "nombre_examen": "Hemoglobina Glicosilada",
+            "precio_examen": 1500
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 58,
+        "fields": {
+            "nombre_examen": "Prueba de Hepatitis A",
+            "precio_examen": 900
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 59,
+        "fields": {
+            "nombre_examen": "Prueba de Lípidos",
+            "precio_examen": 1300
+        }
+    },
+    {
+        "model": "App.Examenes",
+        "pk": 60,
+        "fields": {
+            "nombre_examen": "Electroforesis de Proteínas",
+            "precio_examen": 2500
+        }
+    }
+]

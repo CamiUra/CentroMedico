@@ -1,0 +1,35 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header bg-dark text-white">
+      <h3 class="mb-0">Datos</h3>
+    </div>
+    <div class="card-body">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <h5 class="card-title">ID</h5>
+          <p class="card-text">{{ examen.id_examen }}</p>
+        </div>
+        <div class="col-md-6">
+            <h5 class="card-title">Nombre</h5>
+            <p class="card-text">{{ examen.nombre_examen }}</p>
+        </div>
+      </div>
+      <div class="mb-3">
+        <h5 class="card-title">Precio</h5>
+        <p class="card-text">{{ examen.precio_examen }}</p>
+      </div>
+    </div>
+    <div class="card-footer">
+      <a href="{% url 'examenes_list' %}" class="btn btn-secondary">Volver</a>
+      <a href="{% url 'examenes_edit' examen.pk %}" class="btn btn-warning">Editar</a>
+      <form action="{% url 'examenes_delete' examen.pk %}" method="post" class="d-inline">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

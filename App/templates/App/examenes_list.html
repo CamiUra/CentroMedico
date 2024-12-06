@@ -1,0 +1,38 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">Productos</h2>
+  <a href="{% url 'examen_new' %}" class="btn btn-primary mb-3">Agregar Examen</a>
+  <a href="{% url 'admin_menu' %}" class="btn btn-primary mb-3">Volver</a>
+  <div class="table-responsive">
+    <table class="table table-striped align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Examen</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for examen in examenes_list %}
+        <tr>
+          <td>{{ examen.id_examen }}</td>
+          <td>{{ examen.nombre_examen }}</td>
+          <td>{{ examen.precio_examen }}</td>
+          <td>
+            <a href="{% url 'examen_detail' examen.pk %}" class="btn btn-info btn-sm me-2">Detalles</a>
+            <a href="{% url 'examenes_edit' examen.pk %}" class="btn btn-warning btn-sm me-2">Editar</a>
+            <form action="{% url 'examenes_delete' examen.pk %}" method="post" class="d-inline">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

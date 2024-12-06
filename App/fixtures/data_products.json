@@ -1,0 +1,452 @@
+[
+    {
+        "model": "App.Productos",
+        "pk": 1,
+        "fields": {
+            "nombre_producto": "Paracetamol 500mg",
+            "cantidad": 200,
+            "precio_producto": 1000
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 2,
+        "fields": {
+            "nombre_producto": "Ibuprofeno 400mg",
+            "cantidad": 150,
+            "precio_producto": 1200
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 3,
+        "fields": {
+            "nombre_producto": "Amoxicilina 500mg",
+            "cantidad": 100,
+            "precio_producto": 1800
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 4,
+        "fields": {
+            "nombre_producto": "Loratadina 10mg",
+            "cantidad": 180,
+            "precio_producto": 950
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 5,
+        "fields": {
+            "nombre_producto": "Omeprazol 20mg",
+            "cantidad": 120,
+            "precio_producto": 1500
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 6,
+        "fields": {
+            "nombre_producto": "Cetirizina 10mg",
+            "cantidad": 250,
+            "precio_producto": 900
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 7,
+        "fields": {
+            "nombre_producto": "Diazepam 5mg",
+            "cantidad": 100,
+            "precio_producto": 2200
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 8,
+        "fields": {
+            "nombre_producto": "Paracetamol Infantil 250mg",
+            "cantidad": 150,
+            "precio_producto": 800
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 9,
+        "fields": {
+            "nombre_producto": "Ibuprofeno Infantil 200mg",
+            "cantidad": 130,
+            "precio_producto": 950
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 10,
+        "fields": {
+            "nombre_producto": "Salbutamol 100mcg",
+            "cantidad": 75,
+            "precio_producto": 2500
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 11,
+        "fields": {
+            "nombre_producto": "Clorfenamina 4mg",
+            "cantidad": 300,
+            "precio_producto": 600
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 12,
+        "fields": {
+            "nombre_producto": "Metformina 500mg",
+            "cantidad": 200,
+            "precio_producto": 1400
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 13,
+        "fields": {
+            "nombre_producto": "Lisinopril 10mg",
+            "cantidad": 180,
+            "precio_producto": 1100
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 14,
+        "fields": {
+            "nombre_producto": "Aspirina 500mg",
+            "cantidad": 250,
+            "precio_producto": 950
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 15,
+        "fields": {
+            "nombre_producto": "Dextrometorfano 10mg",
+            "cantidad": 200,
+            "precio_producto": 1000
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 16,
+        "fields": {
+            "nombre_producto": "Fluconazol 150mg",
+            "cantidad": 120,
+            "precio_producto": 1600
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 17,
+        "fields": {
+            "nombre_producto": "Ranitidina 150mg",
+            "cantidad": 200,
+            "precio_producto": 950
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 18,
+        "fields": {
+            "nombre_producto": "Codeína 30mg",
+            "cantidad": 100,
+            "precio_producto": 2300
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 19,
+        "fields": {
+            "nombre_producto": "Ciprofloxacino 500mg",
+            "cantidad": 50,
+            "precio_producto": 3000
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 20,
+        "fields": {
+            "nombre_producto": "Cefalexina 500mg",
+            "cantidad": 120,
+            "precio_producto": 1300
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 21,
+        "fields": {
+            "nombre_producto": "Miconazol 2%",
+            "cantidad": 180,
+            "precio_producto": 1200
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 22,
+        "fields": {
+            "nombre_producto": "Furosemida 40mg",
+            "cantidad": 100,
+            "precio_producto": 1600
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 23,
+        "fields": {
+            "nombre_producto": "Loratadina 5mg",
+            "cantidad": 220,
+            "precio_producto": 850
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 24,
+        "fields": {
+            "nombre_producto": "Amoxicilina 250mg",
+            "cantidad": 90,
+            "precio_producto": 1600
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 25,
+        "fields": {
+            "nombre_producto": "Atenolol 50mg",
+            "cantidad": 180,
+            "precio_producto": 900
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 26,
+        "fields": {
+            "nombre_producto": "Simvastatina 20mg",
+            "cantidad": 200,
+            "precio_producto": 1700
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 27,
+        "fields": {
+            "nombre_producto": "Tamsulosina 0.4mg",
+            "cantidad": 250,
+            "precio_producto": 800
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 28,
+        "fields": {
+            "nombre_producto": "Betametasona 0.1%",
+            "cantidad": 120,
+            "precio_producto": 1300
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 29,
+        "fields": {
+            "nombre_producto": "Clindamicina 300mg",
+            "cantidad": 80,
+            "precio_producto": 2200
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 30,
+        "fields": {
+            "nombre_producto": "Hydrocodone 5mg",
+            "cantidad": 50,
+            "precio_producto": 2500
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 31,
+        "fields": {
+            "nombre_producto": "Trazodona 50mg",
+            "cantidad": 150,
+            "precio_producto": 1900
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 32,
+        "fields": {
+            "nombre_producto": "Sertralina 50mg",
+            "cantidad": 200,
+            "precio_producto": 1700
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 33,
+        "fields": {
+            "nombre_producto": "Ciprofloxacino 250mg",
+            "cantidad": 120,
+            "precio_producto": 1300
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 34,
+        "fields": {
+            "nombre_producto": "Hydroxyzine 25mg",
+            "cantidad": 220,
+            "precio_producto": 1100
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 35,
+        "fields": {
+            "nombre_producto": "Loratadina 10mg",
+            "cantidad": 230,
+            "precio_producto": 1000
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 36,
+        "fields": {
+            "nombre_producto": "Aspirina 100mg",
+            "cantidad": 200,
+            "precio_producto": 850
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 37,
+        "fields": {
+            "nombre_producto": "Losartan 50mg",
+            "cantidad": 150,
+            "precio_producto": 1400
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 38,
+        "fields": {
+            "nombre_producto": "Clopidogrel 75mg",
+            "cantidad": 180,
+            "precio_producto": 2000
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 39,
+        "fields": {
+            "nombre_producto": "Ranitidina 300mg",
+            "cantidad": 100,
+            "precio_producto": 950
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 40,
+        "fields": {
+            "nombre_producto": "Fentermina 37.5mg",
+            "cantidad": 50,
+            "precio_producto": 3200
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 41,
+        "fields": {
+            "nombre_producto": "Prednisona 20mg",
+            "cantidad": 180,
+            "precio_producto": 1600
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 42,
+        "fields": {
+            "nombre_producto": "Glimepirida 2mg",
+            "cantidad": 120,
+            "precio_producto": 1300
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 43,
+        "fields": {
+            "nombre_producto": "Gabapentina 300mg",
+            "cantidad": 150,
+            "precio_producto": 1800
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 44,
+        "fields": {
+            "nombre_producto": "Doxiciclina 100mg",
+            "cantidad": 80,
+            "precio_producto": 2200
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 45,
+        "fields": {
+            "nombre_producto": "Clonazepam 2mg",
+            "cantidad": 150,
+            "precio_producto": 2400
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 46,
+        "fields": {
+            "nombre_producto": "Venlafaxina 75mg",
+            "cantidad": 100,
+            "precio_producto": 2500
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 47,
+        "fields": {
+            "nombre_producto": "Amlodipino 5mg",
+            "cantidad": 150,
+            "precio_producto": 1000
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 48,
+        "fields": {
+            "nombre_producto": "Alprazolam 1mg",
+            "cantidad": 200,
+            "precio_producto": 1600
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 49,
+        "fields": {
+            "nombre_producto": "Lisinopril 20mg",
+            "cantidad": 180,
+            "precio_producto": 1400
+        }
+    },
+    {
+        "model": "App.Productos",
+        "pk": 50,
+        "fields": {
+            "nombre_producto": "Diltiazem 60mg",
+            "cantidad": 120,
+            "precio_producto": 2200
+        }
+    }
+]

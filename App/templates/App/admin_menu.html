@@ -1,0 +1,50 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+<div class="container mt-5 text-center">
+    <h1 class="mb-4">Menú Principal</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Usuarios Médicos</h5>
+                    <p class="card-text">Gestión de usuarios médicos del sistema.</p>
+                    <a href="{% url 'medic_list' %}" class="btn btn-primary">Acceder</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Productos</h5>
+                    <p class="card-text">Gestión de inventario y productos médicos.</p>
+                    <a href="{% url 'productos_list' %}" class="btn btn-primary">Acceder</a>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Exámenes</h5>
+                    <p class="card-text">Gestión de exámenes disponibles.</p>
+                    <a href="{% url 'examenes_list' %}" class="btn btn-primary">Acceder</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Especialidades</h5>
+                    <p class="card-text">Gestión de especialidades médicas.</p>
+                    <a href="{% url 'especialidades_list' %}" class="btn btn-primary">Acceder</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="{% url 'login_view' %}" class="btn btn-primary mb-3">Cerrar sesión</a>
+
+    </div>
+</div>
+
+{% endblock %}

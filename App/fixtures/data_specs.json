@@ -1,0 +1,142 @@
+[
+    {
+        "model": "App.Especialidades",
+        "pk": 1,
+        "fields": {
+            "nombre_especialidad": "Cardiología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 2,
+        "fields": {
+            "nombre_especialidad": "Dermatología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 3,
+        "fields": {
+            "nombre_especialidad": "Gastroenterología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 4,
+        "fields": {
+            "nombre_especialidad": "Neurología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 5,
+        "fields": {
+            "nombre_especialidad": "Pediatría"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 6,
+        "fields": {
+            "nombre_especialidad": "Ginecología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 7,
+        "fields": {
+            "nombre_especialidad": "Traumatología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 8,
+        "fields": {
+            "nombre_especialidad": "Endocrinología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 9,
+        "fields": {
+            "nombre_especialidad": "Urología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 10,
+        "fields": {
+            "nombre_especialidad": "Nefrología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 11,
+        "fields": {
+            "nombre_especialidad": "Oncología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 12,
+        "fields": {
+            "nombre_especialidad": "Oftalmología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 13,
+        "fields": {
+            "nombre_especialidad": "Otorrinolaringología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 14,
+        "fields": {
+            "nombre_especialidad": "Psiquiatría"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 15,
+        "fields": {
+            "nombre_especialidad": "Radiología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 16,
+        "fields": {
+            "nombre_especialidad": "Hematología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 17,
+        "fields": {
+            "nombre_especialidad": "Reumatología"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 18,
+        "fields": {
+            "nombre_especialidad": "Cirugía General"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 19,
+        "fields": {
+            "nombre_especialidad": "Medicina Interna"
+        }
+    },
+    {
+        "model": "App.Especialidades",
+        "pk": 20,
+        "fields": {
+            "nombre_especialidad": "Anestesiología"
+        }
+    }
+]

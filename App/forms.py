@@ -45,21 +45,12 @@ class ProductosForm(forms.ModelForm):
         }
 
 class FichaMedicaForm(forms.ModelForm):
-    id_examen = forms.ChoiceField(
-        choices=Examenes.objects.all().values_list('id_examen', 'nombre_examen'))
-    id_producto = forms.ChoiceField(
-        choices=Productos.objects.all().values_list('id_producto', 'nombre_producto'))
+    id_examen = forms.ModelChoiceField(queryset=Examenes.objects.all(), required=True)
+    id_producto = forms.ModelChoiceField(queryset=Productos.objects.all(), required=True)
+
     class Meta:
         model = FichaMedica
-        fields = ('rut_paciente',
-                  'nombre_paciente',
-                  'apellido_paciente',
-                  'anamnesis',
-                  'diagnostico',
-                  'id_examen',
-                  'id_producto',
-                  'fecha_atencion',
-                  )
+        fields = ['rut_paciente', 'nombre_paciente', 'apellido_paciente', 'anamnesis', 'diagnostico', 'id_examen', 'id_producto', 'fecha_atencion']
         labels = {
             'rut_paciente': 'Rut',
             'nombre_paciente': 'Nombre',

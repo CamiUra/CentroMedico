@@ -22,8 +22,8 @@
         <p class="card-text">{{ ficha_medica.apellido_paciente }}</p>
       </div>
       <div class="mb-3">
-        <h5 class="card-title">Medico a cargo</h5>
-        <p class="card-text">{{ ficha_medica. }}</p>
+        <h5 class="card-title">Médico a cargo</h5>
+        <p class="card-text">{{ ficha_medica.rut_medico.nombre_medico }} {{ ficha_medica.rut_medico.apellido_medico }}</p>
       </div>
       <div class="mb-3">
         <h5 class="card-title">Anamnesis</h5>
@@ -34,37 +34,29 @@
         <p class="card-text">{{ ficha_medica.diagnostico }}</p>
       </div>
       <div class="mb-3">
-        <h5 class="card-title">Examenes</h5>
+        <h5 class="card-title">Examen</h5>
         <p class="card-text">
-            {% if examen %}
-                {{ examen.nombre_examen }} <!-- Displaying the exam name -->
-            {% else %}
-                No hay examenes disponibles.
-            {% endif %}
+            {{ examen.nombre_examen }} - ${{ examen.precio_examen }}
         </p>
-      </div>
-      <div class="mb-3">
-        <h5 class="card-title">Medicamentos</h5>
+    </div>
+    <div class="mb-3">
+        <h5 class="card-title">Medicamento</h5>
         <p class="card-text">
-            {% if ficha_medica.producto %}
-                {{ ficha_medica.producto.nombre }} <!-- Assuming you have a related product object -->
-            {% else %}
-                No hay medicamentos disponibles.
-            {% endif %}
+            {{ producto.nombre_producto }} - Cantidad: {{ producto.cantidad }} - ${{ producto.precio_producto }}
         </p>
-      </div>
+    </div>
       <div class="mb-3">
         <h5 class="card-title">Fecha de Atención</h5>
         <p class="card-text">{{ ficha_medica.fecha_atencion }}</p>
       </div>
     </div>
     <div class="card-footer">
-      <a href="{% url 'fichas_medicas_list' %}" class="btn btn-secondary">Volver</a>
+      <a href="{% url 'ficha_medica_list' %}" class="btn btn-secondary">Volver</a>
       <a href="{% url 'ficha_medica_edit' ficha_medica.id_ficha %}" class="btn btn-warning">Editar</a>      
       <form action="{% url 'ficha_medica_delete' ficha_medica.id_ficha %}" method="post" class="d-inline">
         {% csrf_token %}
         <button type="submit" class="btn btn-danger">Eliminar</button>
-    </form>
+      </form>
     </div>
   </div>
 </div>

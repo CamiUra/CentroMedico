@@ -168,7 +168,7 @@ def especialidades_new(request):
             return redirect('especialidad_detail', pk=especialidad.pk)
     else:
         form = EspecialidadesForm()
-    return render(request, 'especialidades_edit.html', {'form': form})
+    return render(request, 'App/especialidades_edit.html', {'form': form})
         
 def especialidades_edit(request, pk):
     especialidad = get_object_or_404(Especialidades, pk=pk)
@@ -190,46 +190,60 @@ def especialidades_delete(request, pk):
 
 #CRUD Ficha Médica
 
+@login_required
 def ficha_medica_list(request):
     fichas_medicas = FichaMedica.objects.all()
     return render(request, 'App/ficha_medica_list.html', {'ficha_medica_list': fichas_medicas})
 
+@login_required
 def ficha_medica_detail(request, pk):
     ficha_medica = get_object_or_404(FichaMedica, pk=pk)
-    return render(request, 'App/ficha_medica_detail.html', {'ficha_medica': ficha_medica})
+    examen = ficha_medica.id_examen  # Directly access the single exam instance
+    producto = ficha_medica.id_producto  # Directly access the single product instance
+    return render(request, 'App/ficha_medica_detail.html', {
+        'ficha_medica': ficha_medica,
+        'examen': examen,
+        'producto': producto,
+    })
 
 @login_required
 def ficha_medica_new(request):
     if request.method == "POST":
         form = FichaMedicaForm(request.POST)
         if form.is_valid():
+            # Get the logged-in user's medic information
             medic = get_object_or_404(Medicos, rut_medico=request.user.username)
             ficha_medica = form.save(commit=False)
-            ficha_medica.rut_medico = medic
-            ficha_medica.save()
-            return redirect('ficha_medica_detail', pk=ficha_medica.pk)
+            ficha_medica.rut_medico = medic  # Set the medic for the ficha
+            ficha_medica.save()  # Save the ficha_medica instance
+            return redirect('ficha_medica_detail', pk=ficha_medica.pk)  # Redirect to detail view
     else:
         form = FichaMedicaForm()
-    return render(request, 'App/ficha_medica_edit.html', {'form': form})
     
-def ficha_medica_edit(request, id_ficha):
-    ficha_medica = get_object_or_404(FichaMedica, id=id_ficha)
+    # Get the logged-in user's medic information
+    medic = get_object_or_404(Medicos, rut_medico=request.user.username)
+
+    return render(request, 'App/ficha_medica_edit.html', {'form': form, 'medic': medic})
     
+def ficha_medica_edit(request, pk):
+    ficha_medica = get_object_or_404(FichaMedica, pk=pk)
     if request.method == 'POST':
         form = FichaMedicaForm(request.POST, instance=ficha_medica)
         if form.is_valid():
-            form.save()
-            return redirect('fichas_medicas_list')
-        else:
-            print(form.errors)  # Print errors to the console for debugging
+            # Ensure that the foreign key fields are valid
+            try:
+                form.save()
+                return redirect('ficha_medica_list')  # Redirect after saving
+            except:
+                form.add_error(None, "Error saving the form. Please check the foreign key fields.")
     else:
         form = FichaMedicaForm(instance=ficha_medica)
 
-    return render(request, 'your_template.html', {'form': form, 'ficha_medica': ficha_medica})
+    return render(request, 'App/ficha_medica_edit.html', {'form': form, 'ficha_medica': ficha_medica})
     
 def ficha_medica_delete(request, pk):
     ficha_medica = get_object_or_404(FichaMedica, pk=pk)
     if request.method == "POST":
         ficha_medica.delete()
-        return redirect('ficha_medica_list')
-    return render(request, 'App/ficha_medica_detail.html', {'ficha_medica':ficha_medica})
+        return redirect('ficha_medica_list')  # Ensure this matches the name in urls.py
+    return render(request, 'App/ficha_medica_detail.html', {'ficha_medica': ficha_medica})

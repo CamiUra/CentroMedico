@@ -55,7 +55,7 @@ urlpatterns = [
 
 
     # Fichas Médicas URLs
-    path('fichas/', views.ficha_medica_list, name='fichas_medicas_list'),    
+    path('fichas/', views.ficha_medica_list, name='ficha_medica_list'),    
     path('fichas/new/', views.ficha_medica_new, name='ficha_medica_new'),
     path('fichas/<int:pk>/', views.ficha_medica_detail, name='ficha_medica_detail'),
     path('fichas/<int:pk>/edit/', views.ficha_medica_edit, name='ficha_medica_edit'),

@@ -50,8 +50,8 @@ urlpatterns = [
     path('especialidades/', views.especialidades_list, name='especialidades_list'),
     path('especialidades/new/', views.especialidades_new, name='especialidad_new'),
     path('especialidades/<int:pk>/', views.especialidades_detail, name='especialidad_detail'),
-    path('examenes/<int:pk>/edit/', views.especialidades_edit, name='especialidades_edit'),
-    path('examenes/delete/<int:pk>/', views.especialidades_delete, name='especialidades_delete'),
+    path('especialidades/<int:pk>/edit/', views.especialidades_edit, name='especialidades_edit'),
+    path('especialidades/delete/<int:pk>/', views.especialidades_delete, name='especialidades_delete'),
 
 
     # Fichas Médicas URLs

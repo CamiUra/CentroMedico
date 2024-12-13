@@ -1,0 +1,63 @@
+Este manual detalla cómo utilizar de forma adecuada el sistema diseñado. Se describen las funciones 
+disponibles para los usuarios administradores y médicos, así como el flujo de operación general.
+
+=========================
+** INICIO DE SESIÓN **
+
+Al iniciar el programa, aparecerá una pantalla de inicio de sesión. En esta pantalla se deben ingresar 
+el usuario y la contraseña correspondientes. El sistema identificará automáticamente si se trata de un 
+usuario administrador o médico y redirigirá al menú adecuado según el tipo de usuario.
+
+===================================
+** MENÚ DE ADMINISTRADOR **
+
+El menú de administrador permite gestionar distintos aspectos del sistema relacionados con el centro médico. 
+Está dividido en submenús que incluyen:
+
+Productos disponibles
+
+Exámenes
+
+Usuarios médicos
+
+Especialidades
+
+Operaciones disponibles:
+
+Acceso a submenús
+
+Cada submenú muestra una lista de los elementos actuales, junto con las siguientes opciones:
+
+Agregar nuevo elemento:
+
+Al presionar el botón correspondiente, se abrirá una nueva ventana o pestaña para ingresar los datos del nuevo elemento.
+
+Una vez completada la información, se deberá hacer clic en el botón Guardar. Esto abrirá una ventana con los detalles 
+del elemento recién agregado.
+
+Edición y eliminación:
+
+En la vista detallada de un elemento, se disponen botones para editar la información o eliminar el elemento.
+
+Regreso al menú:
+
+Cada submenú cuenta con un botón para regresar al menú principal de administrador.
+
+=================================
+** MENÚ DE MÉDICO **
+
+El acceso al menú de médico está restringido al uso de un RUT y una contraseña. Solamente los usuarios médicos 
+previamente registrados podrán ingresar.
+
+Funcionalidades disponibles:
+
+Crear ficha médica
+
+Al seleccionar esta opción, se abrirá una pestaña para ingresar los datos del paciente.
+
+Una vez completada la información, se podrá guardar la ficha.
+
+Ver pacientes atendidos
+
+Esta opción mostrará una lista con los pacientes atendidos anteriormente, permitiendo consultar información específica 
+según sea necesario.

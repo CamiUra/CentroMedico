@@ -198,8 +198,8 @@ def ficha_medica_list(request):
 @login_required
 def ficha_medica_detail(request, pk):
     ficha_medica = get_object_or_404(FichaMedica, pk=pk)
-    examen = ficha_medica.id_examen  # Directly access the single exam instance
-    producto = ficha_medica.id_producto  # Directly access the single product instance
+    examen = ficha_medica.id_examen 
+    producto = ficha_medica.id_producto
     return render(request, 'App/ficha_medica_detail.html', {
         'ficha_medica': ficha_medica,
         'examen': examen,
@@ -211,16 +211,14 @@ def ficha_medica_new(request):
     if request.method == "POST":
         form = FichaMedicaForm(request.POST)
         if form.is_valid():
-            # Get the logged-in user's medic information
             medic = get_object_or_404(Medicos, rut_medico=request.user.username)
             ficha_medica = form.save(commit=False)
-            ficha_medica.rut_medico = medic  # Set the medic for the ficha
-            ficha_medica.save()  # Save the ficha_medica instance
-            return redirect('ficha_medica_detail', pk=ficha_medica.pk)  # Redirect to detail view
+            ficha_medica.rut_medico = medic 
+            ficha_medica.save() 
+            return redirect('ficha_medica_detail', pk=ficha_medica.pk)
     else:
         form = FichaMedicaForm()
     
-    # Get the logged-in user's medic information
     medic = get_object_or_404(Medicos, rut_medico=request.user.username)
 
     return render(request, 'App/ficha_medica_edit.html', {'form': form, 'medic': medic})
@@ -230,10 +228,9 @@ def ficha_medica_edit(request, pk):
     if request.method == 'POST':
         form = FichaMedicaForm(request.POST, instance=ficha_medica)
         if form.is_valid():
-            # Ensure that the foreign key fields are valid
             try:
                 form.save()
-                return redirect('ficha_medica_list')  # Redirect after saving
+                return redirect('ficha_medica_list')
             except:
                 form.add_error(None, "Error saving the form. Please check the foreign key fields.")
     else:
@@ -245,5 +242,5 @@ def ficha_medica_delete(request, pk):
     ficha_medica = get_object_or_404(FichaMedica, pk=pk)
     if request.method == "POST":
         ficha_medica.delete()
-        return redirect('ficha_medica_list')  # Ensure this matches the name in urls.py
+        return redirect('ficha_medica_list')
     return render(request, 'App/ficha_medica_detail.html', {'ficha_medica': ficha_medica})

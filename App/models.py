@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Especialidades(models.Model):
     id_especialidad = models.AutoField(primary_key=True)
     nombre_especialidad = models.CharField(max_length=255, blank=True, null=True)
@@ -14,7 +13,7 @@ class Examenes(models.Model):
     precio_examen = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
 
     def __str__(self):
-        return self.nombre_examen or "Sin nombre"  # Ensure it returns a string
+        return self.nombre_examen or "Sin nombre"
 
 class Productos(models.Model):
     id_producto = models.AutoField(primary_key=True)
@@ -23,7 +22,7 @@ class Productos(models.Model):
     precio_producto = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
 
     def __str__(self):
-        return self.nombre_producto or "Sin nombre"  # Ensure it returns a string
+        return self.nombre_producto or "Sin nombre"
     
 class Medicos(models.Model):
     rut_medico = models.CharField(primary_key=True, max_length=20)
@@ -42,9 +41,9 @@ class FichaMedica(models.Model):
     rut_medico = models.ForeignKey(Medicos, on_delete=models.CASCADE)
     anamnesis = models.TextField(blank=True, null=True)
     diagnostico = models.TextField(blank=True, null=True)
-    id_examen = models.ForeignKey(Examenes, on_delete=models.CASCADE, blank=True, null=True)  # Change to ForeignKey
-    id_producto = models.ForeignKey(Productos, on_delete=models.CASCADE, blank=True, null=True)  # Change to ForeignKey
+    id_examen = models.ForeignKey(Examenes, on_delete=models.CASCADE, blank=True, null=True)
+    id_producto = models.ForeignKey(Productos, on_delete=models.CASCADE, blank=True, null=True)
     fecha_atencion = models.DateField()
 
     def __str__(self):
-        return f"Ficha: {self.id_ficha}, Paciente: {self.nombre_paciente or 'Sin nombre'}"  # Ensure it returns a string
+        return f"Ficha: {self.id_ficha}, Paciente: {self.nombre_paciente or 'Sin nombre'}"

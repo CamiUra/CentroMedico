@@ -5,7 +5,7 @@ class Especialidades(models.Model):
     nombre_especialidad = models.CharField(max_length=255, blank=True, null=True)
 
     def __str__(self):
-        return self.nombre_especialidad
+        return self.nombre_especialidad or "Sin nombre"
     
 class Examenes(models.Model):
     id_examen = models.AutoField(primary_key=True)
